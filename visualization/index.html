@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+    .content {
+             z-index: 1;
+    }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        canvas {
+            display: block;
+        }
+        div {
+            height: auto;
+        }   
+.blurb {
+    padding: 40px;
+    /* margin-top: 40px; */
+    background-color: grey;
+    opacity: .9
+}
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="tileFloor.init('canvas', 50);">
+    <!-- Wrap Canvas and Div containing content with id='wrapper' -->
+    <div id="wrapper">
+        <canvas id="canvas" style="position:absolute"></canvas>
+            <div class="content">
+                <!-- include a container to put overlayed divs -->
+                <div class="container">
+                    <div class="row" style="height:40px"></div>
+                    <!-- always use rows before bootstrap cols -->
+                    <div class="row text-center blurb">
+                        <div class="col-md-2">Add Some Content</div>
+                        <div class="col-md-8"><h1> Welcome to the Visualizer!</h1></div>
+                        <div class="col-md-2    ">Add Some Content</div>
+                    </div>
+
+                    <div class="row" style="height:40px"></div>
+        
+                    <div class="row text-center blurb">
+
+                            <div class="col-md-4">Add Some Content</div>
+                            <div class="col-md-4"><h1> Layer Divs on Canvas</h1>
+                                <form>
+                                        <div class="form-group">
+                                          <label for="exampleInputEmail1">Email address</label>
+                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="exampleInputPassword1">Password</label>
+                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                          <label class="form-check-label" for="exampleCheck1">Remember Me, I'll definitely forget my password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </form></div>
+                            <div class="col-md-4">Add Some Content</div>
+                    </div>
+                    <div class="row" style="height:40px"></div>
+        
+                    <div class="row text-center blurb">
+
+                            <div class="col-md-4">Add Some Content</div>
+                            
+                            <div class="col-md-4"><h1> Layer Divs on Canvas</h1></div>
+
+                            <div class="col-md-4">Add Some Content</div>
+                    </div>
+            </div>
+            
+        </div>
+</div>
+<!-- JS script file to draw polygons -->
+<!-- To insert different draw templates:
+        1) change script src to filename of JS draw file.
+        2) ensure onLoad in body HTML tag equals var of draw function 'tileFloor' -->
+<script src="draw.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "gibber-polygons",
+  "version": "1.0.0",
+  "description": "Draws polygons using pure JS, create visualization/sound using gibberJS",
+  "main": "paint_gibber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dynamicMosaic/gibber-polygons.git"
+  },
+  "keywords": [
+    "gibber",
+    "visualizer"
+  ],
+  "author": "Hunter Wiley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dynamicMosaic/gibber-polygons/issues"
+  },
+  "homepage": "https://github.com/dynamicMosaic/gibber-polygons#readme",
+  "dependencies": {
+    "gibber.lib": "^1.3.8",
+    "web-audio-api": "^0.2.2"
+  }
+}
